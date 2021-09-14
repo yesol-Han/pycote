@@ -21,7 +21,7 @@ def solution(n, edge):
             if dist[q] + d < dist[destination]:
                 dist[destination] = dist[q] + d
                 queue.append(destination)
-
+    print(dist)
     return dist.count(max(dist))
 
 n = 6
